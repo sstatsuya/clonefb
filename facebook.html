@@ -1,0 +1,871 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Facebook</title>
+        <meta charset="utf-8">
+        <link rel="shortcut icon" href="img/icon.png" />
+        <link rel="stylesheet" type="text/css" href="css.css" />
+    </head>
+    <body>
+        <div id="bluebar">
+            <div id=wrap-input>
+                <a id="icon-home" href="#">
+                    <img src="img/icon-home.png" onclick="location.reload();" height="24px" width="24px" style="user-select: none; border-radius: 2px">
+                </a>
+                <form id="search">
+                    <input type="text" placeholder="Search">
+                    <button id="search-btn" type="submit" style="user-select: none;">
+                        <img height="20px" width="20px">
+                    </button>
+                </form>
+            </div>
+            <div id="wrap-panel">
+                <ul id="ul-panel">
+                    <li class="li-panel" style="margin-left:-20px;">
+                        <a href="#" id="name" class="panel">
+                            <img id="test" src="img/avatar.png" height="24px" width="24px"> 
+                            <p>Tiến</p>
+                            <div class="border-right"></div>
+                        </a>
+                    </li>
+                    <li class="li-panel" id="home">
+                        <a href="#" onclick="location.reload();" id="home" class="panel">
+                            <p>Home</p>
+                            <div class="border-right"></div>
+                        </a>
+                    </li>
+                    <li class="li-panel">
+                        <a href="#" id="create" class="panel">
+                            <p>Create</p>
+                            <div class="border-right"></div>
+                        </a>
+                    </li>
+                </ul>
+                <div id = "div-panel">
+                    <ul>
+                        <li>
+                            <a href="#" id = "friend">
+                                <img src="img/friend.png" height="22px" width="25px">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" id = "messenger">
+                                <img src="img/messenger.png" height="24px" width="25px">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" id = "notice">
+                                <img src="img/notice.png" height="24px" width="24px">
+                                <div class="border-right" style="top:10%; bottom:34%;"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" id="help">
+                                <img src="img/help.png" height="27px" width="29px" style="margin-left: 8px; margin-top: -3px;">
+                            </a>
+                        </li>
+                    </ul>
+            
+                </div>
+                <a href="#" id="more">
+                    <img src="img/more.png" height="13px" width="16px">
+                </a>
+            </div>
+        </div>
+        <div id="content-left">
+            <div id="ctl2">
+                <ul id="ul-tag">
+                    <li style="margin-top:-5px;">
+                        <a href="#" id="profile" class="a-tag">
+                            <div id="profile-div" class="div-tag">
+                                <img src="img/avatar.png" height="20px" width="20px" style="margin-top:3px;">
+                                <p>Lương Minh Tiến</p>
+                                <a class="tag-more" href="#" style="float: right; margin-top:9px; margin-right:5px;">
+                                    <img src="img/content-more.png" width="18px">
+                                </a>
+                            </div> 
+                        </a>
+                    </li>
+                    <li style="margin-top:15px;">
+                        <a href="#" id="newsfeed" class="a-tag">
+                            <div id="newsfeed-div" class="div-tag" style="background-color: #f5f6f7;">
+                                <img src="img/newsfeed.png" height="20px" width="20px" style="margin-top: 4px;">
+                                <p style="font-weight: bold; color: black;">News Feed</p>
+                                <a class="tag-more" href="#" style="float: right; margin-top:9px; margin-right:5px; visibility: visible;">
+                                    <img src="img/content-more.png" width="18px">
+                                </a>
+                            </div> 
+                        </a>
+                    </li>
+                     <li style="margin-top:-9px;">
+                        <a href="#" id="mess" class="a-tag">
+                            <div id="mess-div" class="div-tag">
+                                <img src="img/messenger2.png" height="20px" width="20px"  style="margin-top: 3px;">
+                                <p>Messenger</p>
+                            </div> 
+                        </a>
+                    </li>
+                    <li style="margin-top:-9px;">
+                        <a href="#" id="watch" class="a-tag">
+                            <div id="watch-div" class="div-tag">
+                                <img src="img/watch.png" height="20px" width="20px"  style="margin-top: 4px;">
+                                <p>Watch</p>
+                                <a class="red-dot" href="#" style="float: right; margin-top:7px; margin-right:5px;">
+                                    <img src="img/red-dot.png" width="7px" height="7px" style="margin-top:4px;">
+                                </a>
+                            </div> 
+                        </a>
+                    </li>
+                    <li style="margin-top:-9px;">
+                        <a href="#" id="market" class="a-tag">
+                            <div id="market-div" class="div-tag">
+                                <img src="img/market.png" height="20px" width="20px"  style="margin-top: 3px;">
+                                <p>Marketplace</p>
+                            </div> 
+                        </a>
+                    </li>
+                    
+                    <div id="shortcut-div" >
+                        <li>
+                            <div id="shortcut-name">
+                                <p style="float: left; line-height: 0px; font-size: 13px; color:#616770; font-weight: bold; margin-left:15px;">Shortcuts</p>
+                                <a id="edit" href="#" style="float:right; line-height: 27px; font-size:13px; margin-right:5px; text-decoration: none; color: #365899;">
+                                    Edit
+                                </a>
+                            </div>
+                        </li>
+                        <li style="margin-top:-9px; margin-left:8px;">
+                            <a href="#" class="a-tag">
+                                <div class="div-tag">
+                                    <img src="img/shortcut-icon.png" height="20px" width="20px"  style="margin-top: 3px;">
+                                    <p>VNOI - Diễn đàn OI...</p>
+                                    <a class="tag-more" href="#" style="float: right; margin-top:9px; margin-right:5px;">
+                                        <img src="img/content-more.png" width="18px">
+                                    </a>
+                                    <h1 class="count">9</h1>
+                                </div> 
+                            </a>
+                        </li>
+                        <li style="margin-top:-9px; margin-left:8px;">
+                            <a href="#" class="a-tag">
+                                <div class="div-tag">
+                                    <img src="img/shortcut-icon.png" height="20px" width="20px" style="margin-top: 3px;">
+                                    <p>Codelearn contrib...</p>
+                                    <a class="tag-more" href="#" style="float: right; margin-top:9px; margin-right:5px;">
+                                        <img src="img/content-more.png" width="18px">
+                                    </a>
+                                </div> 
+                            </a>
+                        </li>
+                        <li style="margin-top:-9px; margin-left:8px;">
+                            <a href="#" class="a-tag">
+                                <div class="div-tag">
+                                    <img src="img/shortcut-icon.png" height="20px" width="20px" style="margin-top: 3px;">
+                                    <p>Nhóm chung D18C...</p>
+                                    <a class="tag-more" href="#" style="float: right; margin-top:9px; margin-right:5px;">
+                                        <img src="img/content-more.png" width="18px">
+                                    </a>
+                                </div> 
+                            </a>
+                        </li>
+                        <li style="margin-top:-9px; margin-left:8px;">
+                            <a href="#" class="a-tag">
+                                <div class="div-tag">
+                                    <img src="img/shortcut-icon.png" height="20px" width="20px" style="margin-top: 3px;">
+                                    <p>Nhóm phân tích...</p>
+                                    <a class="tag-more" href="#" style="float: right; margin-top:9px; margin-right:5px;">
+                                        <img src="img/content-more.png" width="18px">
+                                    </a>
+                                    <h1 class="count">20+</h1>
+                                </div> 
+                            </a>
+                        </li>
+                        <li style="margin-top:-9px; margin-left:8px;">
+                            <a href="#" class="a-tag">
+                                <div class="div-tag">
+                                    <img src="img/shortcut-icon.png" height="20px" width="20px" style="margin-top: 3px;">
+                                    <p>PTIT HCM™!</p>
+                                    <a class="tag-more" href="#" style="float: right; margin-top:9px; margin-right:5px;">
+                                        <img src="img/content-more.png" width="18px">
+                                    </a>
+                                    <h1 class="count" style="margin-top: 6px; margin-right: -15px;">11</h1>
+                                </div> 
+                            </a>
+                        </li>
+                        <li style="margin-top: 7px;">
+                            <div class="more-tag-div">
+                                <a href="#">
+                                    <img src="img/more-tag.png" height="13px" width="16px" style="float: left; margin-left:15px;">
+                                    <p class="more-tag-p">See More...</p>
+                                </a>
+                            </div>
+                        </li>
+                    </div>
+                    <div id="explore-div">
+                        <li style="line-height: 0px; font-size: 13px; color:#616770; font-weight: bold; margin-left:15px; margin-top:15px;">Explore</li>
+                        <li style="margin-top:10px; margin-left:8px;">
+                            <a href="#" class="a-tag">
+                                <div class="div-tag">
+                                    <img src="img/page-tag.png" height="20px" width="20px" style="margin-top: 4px;">
+                                    <p>Pages</p>
+                                </div> 
+                            </a>
+                        </li>
+                        <li style="margin-top:-10px; margin-left:8px;">
+                            <a href="#" class="a-tag">
+                                <div class="div-tag">
+                                    <img src="img/group-tag.png" height="20px" width="20px" style="margin-top: 4px;">
+                                    <p>Groups</p>
+                                </div> 
+                            </a>
+                        </li>
+                        <li style="margin-top:-10px; margin-left:8px;">
+                            <a href="#" class="a-tag">
+                                <div class="div-tag">
+                                    <img src="img/fund-tag.png" height="20px" width="20px" style="margin-top: 4px;">
+                                    <p>Fundraisers</p>
+                                </div> 
+                            </a>
+                        </li>
+                        <li style="margin-top:-10px; margin-left:8px;">
+                            <a href="#" class="a-tag">
+                                <div class="div-tag">
+                                    <img src="img/event-tag.png" height="20px" width="20px" style="margin-top: 4px;">
+                                    <p>Events</p>
+                                </div> 
+                            </a>
+                        </li>
+                        <li style="margin-top:-10px; margin-left:8px;">
+                            <a href="#" class="a-tag">
+                                <div class="div-tag">
+                                    <img src="img/game-tag.png" height="20px" width="20px" style="margin-top: 4px;">
+                                    <p>Games</p>
+                                </div> 
+                            </a>
+                        </li>
+                        <li style="margin-top: 7px; margin-left: 0px;">
+                            <div class="more-tag-div">
+                                <a href="#">
+                                    <img src="img/more-tag.png" height="13px" width="16px" style="float: left; margin-left:15px;">
+                                    <p class="more-tag-p">See More...</p>
+                                </a>
+                            </div>
+                        </li>
+                    </div>
+                    
+                    
+                </ul>
+                
+            </div>
+        </div>
+        <div id="content-mid">
+            <div id="post">
+                <div style="width:100%; height:30px; background-color: #f5f6f7; border-radius: 3px 3px 0 0 ; border: 1px solid #dddfe2; margin-left:0px;">
+                    <a href="#" style="font-size: 12px; font-weight: bold; line-height:30px; text-decoration: none; color: #4b4f56; margin-left: 10px;">Create Post</a>
+                </div>
+                <div style="border: 1px solid #dddfe2; border-top:0px; border-bottom: 0; width: 100%;">
+                    <img src="img/avatar.png" height="38px" width="40px" style="margin-left:10px; margin-top: 13px;">
+                    <input type="text" style="font-size: 14px; margin-top: 11px; margin-left: 10px; position: absolute; width: 270px; height: 40px; outline: none; border: none;" placeholder="What's on your mind, Tiến?">
+                    <div style="position: relative; height: 1px; width:94%; left: 3%; background-color: #e9ebee; margin-top: 20px;"></div>
+                </div>
+                <div id="post-option" style="width: 100%; height: 50px;">
+                    <ul>
+                        <li style="float: left; list-style: none; margin-left: -30px;">
+                            <a href="#">
+                                <div class="post-option-back" style="width: 125px; height: 30px; ">
+                                    <img class="post-option-img" src="img/createroom-icon.png" height="20px" width="20px" >
+                                    <p class="post-option-p">Create Room</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li style="float: left; list-style: none; ">
+                            <a href="#">
+                                <div class="post-option-back" style="width: 115px; height: 30px; margin-left:5px;">
+                                    <img class="post-option-img" src="img/photo-icon.png" height="20px" width="20px">
+                                    <p class="post-option-p">Photo/Video</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li style="float: left; list-style: none;">
+                            <a href="#">
+                                <div class="post-option-back" style="width: 115px; height: 30px; margin-left: 5px;">
+                                    <img class="post-option-img" src="img/tag-icon.png" height="20px" width="20px">
+                                    <p class="post-option-p">Tag Friends</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li style="float: left; list-style: none;">
+                            <a href="#">
+                                <div class="post-option-back" style="width: 40px; height: 30px; margin-left: 5px;">
+                                    <img class="post-option-img" src="img/content-more.png" height="8px" width="20px" style="margin-top: 10px; margin-left:10px">
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="room">
+                <div id="room-title">
+                    <p style="float:left; font-size:13px; color: #65676b; font-weight: bold; margin-top:15px; margin-left: 15px;">Rooms</p>
+                    <a href="#" style="float: right; font-size:12px; color: #3386f3; text-decoration: none; margin-top:15px; margin-right: 15px;">Create</a>
+                    <ul style="position: absolute; margin-top: 40px; margin-left: -38px;">
+                        <li class="room-li">
+                            <a href="https://fb.com">
+                                <div class="room-opacity" style="border-radius: 50%; background:black; position: absolute;width: 40px; height: 40px; margin-left:4px; visibility: visible; opacity: 30%"></div>
+                                <img class="room-img" src="img/avatar.png" height="40px" width="45px">
+                                <img src="img/plussignal.png" height="15px" width="15px" style="position: absolute; margin-left: -30px; margin-top: 12px;">
+                           </a>
+                        </li>
+                        <li class="room-li">
+                            <a href="https://fb.com">
+                                <div class="room-opacity" style="border-radius: 50%; background:black; position: absolute;width: 37px; height: 40px; margin-left:4px;"></div>
+                                <img class="room-img" src="img/ava1-room.png" height="40px" width="45px">
+                           </a>
+                        </li>
+                        <li class="room-li">
+                            <a href="https://fb.com">
+                                <div class="room-opacity" style="border-radius: 50%; background:black; position: absolute;width: 37px; height: 40px; margin-left:4px;"></div>
+                                <img class="room-img" src="img/ava3.png" height="40px" width="40px">
+                           </a>
+                        </li>
+                        <li class="room-li">
+                            <a href="https://fb.com">
+                                <div class="room-opacity" style="border-radius: 50%; background:black; position: absolute;width: 42px; height: 40px; margin-left:4px;"></div>
+                                <img class="room-img" src="img/ava2-room.png" height="44px" width="47px">
+                           </a>
+                        </li>
+                        <li class="room-li">
+                            <a href="https://fb.com">
+                                <div class="room-opacity" style="border-radius: 50%; background:black; position: absolute;width: 37px; height: 40px; margin-left:4px;"></div>
+                                <img class="room-img" src="img/ava9.png" height="40px" width="40px">
+                           </a>
+                        </li>
+                        <li class="room-li">
+                            <a href="https://fb.com">
+                                <div class="room-opacity" style="border-radius: 50%; background:black; position: absolute;width: 37px; height: 40px; margin-left:4px;"></div>
+                                <img class="room-img" src="img/ava5.png" height="40px" width="40px">
+                           </a>
+                        </li>
+                        <li class="room-li">
+                            <a href="https://fb.com">
+                                <div class="room-opacity" style="border-radius: 50%; background:black; position: absolute;width: 37px; height: 40px; margin-left:4px;"></div>
+                                <img class="room-img" src="img/ava10.png" height="40px" width="40px">
+                           </a>
+                        </li>
+                        <li class="room-li">
+                            <a href="https://fb.com">
+                                <div class="room-opacity" style="border-radius: 50%; background:black; position: absolute;width: 37px; height: 40px; margin-left:4px;"></div>
+                                <img class="room-img" src="img/ava1-room.png" height="40px" width="45px">
+                           </a>
+                        </li>
+                        <li class="room-li">
+                            <a href="https://fb.com">
+                                <div class="room-opacity" style="border-radius: 50%; background:black; position: absolute;width: 37px; height: 40px; margin-left:4px;"></div>
+                                <img class="room-img" src="img/ava9.png" height="40px" width="40px">
+                           </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="story">
+                <div id="story-title">
+                    <p style="float:left; font-size:13px; color: #65676b; font-weight: bold; margin-top:10px; margin-left: 15px;">Stories</p>
+                    <a id="story-seeall" href="#" style="float: right; font-size:12px; color: #3386f3; margin-top:10px; margin-right: 15px;">See All</a>
+                </div>
+                <div>
+                    <ul style="position: absolute; margin-top: 38px;">
+                        <li class="story-li" style="margin-left: 0px;">
+                            <a href="#">
+                                <div class="story-img-container">
+                                    <img class="story-img" src="img/story1.png">
+                                    <div style="background: white; position: absolute; height:40px; width:40px; border-radius: 50%; margin-left: 8px; margin-top: 8px;">
+                                        <img src="img/plussignal2.png" style="position: absolute; margin-left:11px; margin-top:11px;height: 18px; width: 18px;">
+                                    </div>
+                                    <p style="position: absolute; font-size: 13px; font-weight: bold; color: white; bottom: -5px; margin-left: 10px;">Add to Story</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="story-li">
+                            <a href="#">
+                                <div class="story-img-container" style="margin-left: 95px;">
+                                    <img class="story-img" src="img/story2.png">
+                                    <div style="background: #3578e5; position: absolute; height:40px; width:40px; border-radius: 50%; margin-left: 8px; margin-top: 8px;">
+                                        <img src="img/ava2.png" style="position: absolute; margin-left:3px; margin-top:3px;height: 34px; width: 34px;">
+                                    </div>
+                                    <p style="position: absolute; font-size: 13px; font-weight: bold; color: white; bottom: -5px; margin-left: 10px;">Da Vincy</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="story-li">
+                            <a href="#">
+                                <div class="story-img-container" style="margin-left: 215px;">
+                                    <img class="story-img" src="img/story3.png">
+                                    <div style="background: #3578e5; position: absolute; height:40px; width:40px; border-radius: 50%; margin-left: 8px; margin-top: 8px;">
+                                        <img src="img/ava5.png" style="position: absolute; margin-left:3px; margin-top:3px;height: 34px; width: 34px;">
+                                    </div>
+                                    <p style="position: absolute; font-size: 13px; font-weight: bold; color: white; bottom: -5px; margin-left: 10px;">Leonel Messi</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="story-li">
+                            <a href="#">
+                                <div class="story-img-container" style="margin-left: 335px;">
+                                    <img class="story-img" src="img/story4.png">
+                                    <div style="background: #3578e5; position: absolute; height:40px; width:40px; border-radius: 50%; margin-left: 8px; margin-top: 8px;">
+                                        <img src="img/ava10.png" style="position: absolute; margin-left:3px; margin-top:3px;height: 34px; width: 34px;">
+                                    </div>
+                                    <p style="position: absolute; font-size: 13px; font-weight: bold; color: white; bottom: -5px; margin-left: 10px;">Fap TV</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="news">
+                <div class="news-title">
+                    <a href="#"><img src="img/ava3.png" height="40px" width="40px" style="float: left; margin-top: 15px; margin-left: 15px;"></a>
+                    <div class="news-title-name"  style="float: left; max-height: 50px; width:400px; background: white; margin-left: 15px; margin-top: 15px;">
+                        <div class="grid-container">
+                            <div class="news-name">
+                                <a href="#" style="font-size: 13px; color: #0b3487; font-weight: bolder; text-decoration: none;">Adam John</a>
+                                <img src="img/name-arrow.png" style="height:10px; width:7px">
+                                <a href="#" style="font-size: 13px; color: #0b3487; font-weight: bolder; text-decoration: none;">Front-end group</a>
+                            </div>
+                            <a href="#" class="news-time">1h</a>
+                            <div class="news-dot">.</div>
+                            <img src="img/news-public.png" class="news-public" height="14px" width="14px"/>
+                        </div>
+                    </div>
+                    <a href="#"><img src="img/news-more.png" width="18px" height="4px"  style="float: right; margin-right: 5px; margin-top: 15px;"></a>
+                </div>
+                <p class="news-content">
+                    Bác nào muốn học Lập trình Web Miễn phí
+                    Em Lâm 20++ sẽ hướng dẫn<br>
+                    Nội dung khóa học<br>
+                    1. HTML Cơ bản<br>
+                    2. CSS Cơ bản<br>
+                    3. JavaScript cơ bản<br>
+                    4. HTML CSS nâng cao, jQuery<br>
+                    5. Boostrap Responsive<br>
+                    6. Tối ưu và Validator HTML CSS<br>
+                    7. PHP, MySQL cơ bản<br>
+                    8. PHP MVC<br>
+                    9. WordPress theme<br>
+                    10. WordPress Plugin<br>
+                    11. WordPress Widget<br>
+                    12. WordPress Options<br>
+                    13. Hoàn thiện web tin tức từ A-Z (cắt PSD->HTML, CSS-> WordPress)<br>
+                    14. Hoàn thiện Web Bán hàng từ A-Z (Cắt PSD -> HTML CSS-> Web WordPress)<br>
+                    15. Hướng dẫn sử dụng FTP Cpanel, phpMyadmin và đưa web lên Live Website (Host để chạy web luôn)<br>
+                    16. Hướng dẫn tối ưu Tốc độ Website Chuẩn SEO và Bảo mật Website<br>
+                </p>
+                <a href="#"><img class="news-img" src="img/news-img1.jpg" style="width: 100%;"></a>
+                <div class="news-interact" style="margin-top: -18px;">
+                    <ul>
+                        <li class="news-interact-li">
+                            <a href="#">
+                                <img src="img/like-icon.png" height="23px" width="23px" style="position: relative; z-index: 3; margin-top: 8px; margin-left:-30px;">
+                            </a>
+                        </li>
+                        <li class="news-interact-li">
+                            <a href="#">
+                                <img src="img/love-icon.png" height="23px" width="23px" style="position: relative; z-index: 2; margin-left: -10px;margin-top: 8px;">
+                            </a>
+                        </li>
+                        <li class="news-interact-li">
+                            <a href="#">
+                                <img src="img/haha-icon.png" height="23px" width="23px" style="position: relative; z-index: 1; margin-left: -4px;margin-top: 8px;">
+                            </a>
+                        </li>
+                        <li class="news-interact-li">
+                            <p style="font-size: 13px; color: #606770; margin-top: 12px; margin-left: 3px;">302</p>
+                        </li>
+                        <li style="float: right; list-style: none; margin-top: 10px; margin-right: 10px;">
+                            <a href="#" style="text-decoration: none; font-size: 13px; color: #606770;">3 Shares</a>
+                        </li>
+                        <li style="float: right; list-style: none; margin-top: 10px; margin-right: 10px;">
+                            <a href="#" style="text-decoration: none; font-size: 13px; color: #606770;">127 Comments</a>
+                        </li>
+                    </ul>
+                    <div style="width: 90%; height: 0.5px; background: #dadde1; clear:left; position: relative; left:5%; bottom:-3px;"></div>
+                </div>
+                <div class="news-interact2" style="background: white; border-radius: 0px 0px 5px 5px;width: 100%; height: 40px;">
+                    <div id="interact2-wrap" style="width:95%; margin-left:10px; ">
+                        <a href="#" id="like" class="interact-button">
+                            <img src="img/button-like.png" height="20px" width="20px" style="user-select: none;float:left; margin: 5px 0px 0px 45px;">
+                            <p style="user-select: none; float:left; margin: 8px 0px 0px 5px; font-size: 14px; color: #606770; font-weight: bold;">Like</p>
+                        </a>
+                        <a href="#" id="comment" class="interact-button">
+                            <img src="img/button-comment.png" height="20px" width="20px" style="user-select: none;float:left; margin: 5px 0px 0px 30px;">
+                            <p style="user-select: none;float:left; margin: 8px 0px 0px 5px; font-size: 14px; color: #606770; font-weight: bold;">Comment</p>
+                        </a>
+                        <a href="#" id="share" class="interact-button">
+                            <img src="img/button-share.png" height="20px" width="20px" style="user-select: none;float:left; margin: 5px 0px 0px 40px;">
+                            <p style="user-select: none;float:left; margin: 8px 0px 0px 5px; font-size: 14px; color: #606770; font-weight: bold;">Share</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div style="height: 100px; width: 200px; background-color: yellow; bottom: 0px; margin-top: 500px;"></div>
+        </div>
+        <div id="content-other">
+            <div id="gaming-div">
+                <div>
+                    <img style="float: left; margin-top: 10px; margin-left: 10px;" src="img/gaming-icon.png" height="17px" width="17px">
+                    <a href="#"><p style="margin-left: 8px; line-height: 10px; color:#606770; font-size: 13px; font-weight: bold;">Gaming Video</p></a>
+                </div>
+                <a href="#"><img src="img/gaming-img.png" width="100%" style="margin-top:5px;"></a>
+                <p style="margin-left: 8px; color:#606770; font-size: 13px; font-weight: bold; margin-top:6px;">Live Now in Popular Games</p>
+                <ul class="gaming-ul">
+                    <li style="margin-left: -170px;">
+                        <a href="#">
+                            <div style="background-image: url('img/gaming1.png'); background-size: cover; border-radius: 2px;"></div>
+                        </a>
+                    </li>
+                    <li style="margin-left: -70px;">
+                        <a href="#">
+                            <div style="background-image: url('img/gaming2.png'); background-size: cover; border-radius: 2px;"></div>
+                        </a>
+                    </li>
+                    <li style="margin-left: 10px;">
+                        <a href="#">
+                            <div style="background-image: url('img/gaming3.png'); background-size: cover; border-radius: 2px;"></div>
+                        </a>
+                    </li>
+                    <li style="margin-left: -130px;margin-top:-10px; clear:left;">
+                        <a href="#">
+                            <div style="background-image: url('img/gaming4.png'); background-size: cover; border-radius: 2px;"></div>
+                        </a>
+                    </li>
+                    <li style="margin-left: -70px; margin-top:-10px; margin-left: -30px;">
+                        <a href="#">
+                            <div style="background-image: url('img/gaming5.png'); background-size: cover; border-radius: 2px;"></div>
+                        </a>
+                    </li>
+                    <li style="margin-left: 10px; margin-top:-10px;">
+                        <a href="#">
+                            <div style="background-image: url('img/gaming6.png'); background-size: cover; border-radius: 2px;"></div>
+                        </a>
+                    </li>
+                </ul>
+                <a href="#"><p id="gaming-seeall" style="font-size: 13px; color:#385898; margin-left:10px; margin-top:8px;">See All</p></a>
+            </div>
+            <div id="language-div">
+                <ul>
+                    <li style="font-size: 13px; color: #90949c; margin-top:2px;">
+                        English (US)
+                    </li>
+                    <li class="li-dot">.</li>
+                    <li>
+                        <a href="#">Tiếng Việt</a>
+                    </li>
+                    <li class="li-dot">.</li>
+                    <li>
+                        <a href="#">中文(台灣)</a>
+                    </li>
+                    <li class="li-dot">.</li>
+                    <a href="#">
+                        <div id="language-add">
+                            <img src="img/cross.png" height="13px" width="13px" style="margin-top: 6px; margin-left: 11px;">
+                        </div>
+                    </a>
+                    
+                    <li>
+                        <a href="#">Español</a>
+                    </li>
+                    <li class="li-dot">.</li>
+                    <li>
+                        <a href="#">Português (Brasil)</a>
+                    </li>
+                </ul>
+            </div>
+            <div id="about-div">
+                <ul>
+                    <li>
+                        <a href="#">Privacy</a>
+                    </li>
+                    <li class="li-dot">.</li>
+                    <li>
+                        <a href="#">Terms</a>
+                    </li>
+                    <li class="li-dot">.</li>
+                    <li>
+                        <a href="#">Advertising</a>
+                    </li>
+                    <li class="li-dot">.</li>
+                    <li>
+                        <a href="#">Ad Choices</a>
+                        <img src="img/adchoices-img.png" height="12px" width="12px">
+                    </li>
+                    <li class="li-dot">.</li>
+                    <li>
+                        <a href="#">Cookies</a>
+                    </li>
+                    <li class="li-dot">.</li>
+                    <li>
+                        <a href="#">More</a>
+                        <img src="img/more2.png" height="7px" width="7px">
+                    </li>
+                </ul>
+                <p style="font-size: 13px; color: #616770; clear: left; margin-top: 3px; margin-left: 5px;">Facebook &#169 2020</p>
+            </div>
+        </div>
+        
+        <div id="content-right">
+            <ul id="ib-ul">
+                <li>
+                    <a href="#">
+                        <div class="ib-div">
+                            <img class="ib-img" src="img/ava1.png" height="36px" width="36px">
+                            <p class="ib-name">Sponges</p>
+                            <div class="ib-onl"></div>
+                            <img class="videocall" src="img/videocall.png" height="18px" width="18px" style="margin-top: 11px; float:right; right: 30px;">
+                            <img class="phonecall" src="img/phonecall.png" height="18px" width="18px" style="margin-top: 10px; float:right; right:55px;" >
+                            
+                        </div>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="#">
+                        <div class="ib-div">
+                            <img class="ib-img" src="img/ava2.png" height="36px" width="36px">
+                            <p class="ib-name">Lena</p>
+                            <div class="ib-onl"></div>
+                            <img class="videocall" src="img/videocall.png" height="18px" width="18px" style="margin-top: 11px; float:right; right: 30px;">
+                            <img class="phonecall" src="img/phonecall.png" height="18px" width="18px" style="margin-top: 10px; float:right; right:55px;" >
+                        </div>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="#">
+                        <div class="ib-div">
+                            <img class="ib-img" src="img/ava3.png" height="36px" width="36px">
+                            <p class="ib-name">Isaac Newton</p>
+                            <div class="ib-onl"></div>
+                            <img class="videocall" src="img/videocall.png" height="18px" width="18px" style="margin-top: 11px; float:right; right: 30px;">
+                            <img class="phonecall" src="img/phonecall.png" height="18px" width="18px" style="margin-top: 10px; float:right; right:55px;" >
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="ib-div">
+                            <img class="ib-img" src="img/ava4.png" height="36px" width="36px">
+                            <p class="ib-name">Mickey</p>
+                            <div class="ib-onl"></div>
+                            <img class="videocall" src="img/videocall.png" height="18px" width="18px" style="margin-top: 11px; float:right; right: 30px;">
+                            <img class="phonecall" src="img/phonecall.png" height="18px" width="18px" style="margin-top: 10px; float:right; right:55px;" >
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="ib-div">
+                            <img class="ib-img" src="img/ava5.png" height="36px" width="36px">
+                            <p class="ib-name">Linh Nguyễn</p>
+                            <div class="ib-onl"></div>
+                            <img class="videocall" src="img/videocall.png" height="18px" width="18px" style="margin-top: 11px; float:right; right: 30px;">
+                            <img class="phonecall" src="img/phonecall.png" height="18px" width="18px" style="margin-top: 10px; float:right; right:55px;" >
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="ib-div">
+                            <img class="ib-img" src="img/ava6.png" height="36px" width="36px">
+                            <p class="ib-name">Oggy</p>
+                            <div class="ib-onl"></div>
+                            <img class="videocall" src="img/videocall.png" height="18px" width="18px" style="margin-top: 11px; float:right; right: 30px;">
+                            <img class="phonecall" src="img/phonecall.png" height="18px" width="18px" style="margin-top: 10px; float:right; right:55px;" >
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="ib-div">
+                            <img class="ib-img" src="img/ava7.png" height="36px" width="36px">
+                            <p class="ib-name">Anh là vô đối</p>
+                            <div class="ib-onl"></div>
+                            <img class="videocall" src="img/videocall.png" height="18px" width="18px" style="margin-top: 11px; float:right; right: 30px;">
+                            <img class="phonecall" src="img/phonecall.png" height="18px" width="18px" style="margin-top: 10px; float:right; right:55px;" >
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="ib-div">
+                            <img class="ib-img" src="img/ava2.png" height="36px" width="36px">
+                            <p class="ib-name">Songoku</p>
+                            <div class="ib-onl"></div>
+                            <img class="videocall" src="img/videocall.png" height="18px" width="18px" style="margin-top: 11px; float:right; right: 30px;">
+                            <img class="phonecall" src="img/phonecall.png" height="18px" width="18px" style="margin-top: 10px; float:right; right:55px;" >
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="ib-div">
+                            <img class="ib-img" src="img/ava8.png" height="36px" width="36px">
+                            <p class="ib-name">Ngày mai anh đi</p>
+                            <div class="ib-onl"></div>
+                            <img class="videocall" src="img/videocall.png" height="18px" width="18px" style="margin-top: 11px; float:right; right: 30px;">
+                            <img class="phonecall" src="img/phonecall.png" height="18px" width="18px" style="margin-top: 10px; float:right; right:55px;" >
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="ib-div">
+                            <img class="ib-img" src="img/ava9.png" height="36px" width="36px">
+                            <p class="ib-name">Thành Lê </p>
+                            <div class="ib-onl"></div>
+                            <img class="videocall" src="img/videocall.png" height="18px" width="18px" style="margin-top: 11px; float:right; right: 30px;">
+                            <img class="phonecall" src="img/phonecall.png" height="18px" width="18px" style="margin-top: 10px; float:right; right:55px;" >
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="ib-div">
+                            <img class="ib-img" src="img/ava10.png" height="36px" width="36px">
+                            <p class="ib-name">Sasuke Uchiha</p>
+                            <div class="ib-onl"></div>
+                            <img class="videocall" src="img/videocall.png" height="18px" width="18px" style="margin-top: 11px; float:right; right: 30px;">
+                            <img class="phonecall" src="img/phonecall.png" height="18px" width="18px" style="margin-top: 10px; float:right; right:55px;" >
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="ib-div">
+                            <img class="ib-img" src="img/ava1.png" height="36px" width="36px">
+                            <p class="ib-name">Sponges</p>
+                            <div class="ib-onl"></div>
+                            <img class="videocall" src="img/videocall.png" height="18px" width="18px" style="margin-top: 11px; float:right; right: 30px;">
+                            <img class="phonecall" src="img/phonecall.png" height="18px" width="18px" style="margin-top: 10px; float:right; right:55px;" >
+                            
+                        </div>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="#">
+                        <div class="ib-div">
+                            <img class="ib-img" src="img/ava2.png" height="36px" width="36px">
+                            <p class="ib-name">Lena</p>
+                            <div class="ib-onl"></div>
+                            <img class="videocall" src="img/videocall.png" height="18px" width="18px" style="margin-top: 11px; float:right; right: 30px;">
+                            <img class="phonecall" src="img/phonecall.png" height="18px" width="18px" style="margin-top: 10px; float:right; right:55px;" >
+                        </div>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="#">
+                        <div class="ib-div">
+                            <img class="ib-img" src="img/ava3.png" height="36px" width="36px">
+                            <p class="ib-name">Isaac Newton</p>
+                            <div class="ib-onl"></div>
+                            <img class="videocall" src="img/videocall.png" height="18px" width="18px" style="margin-top: 11px; float:right; right: 30px;">
+                            <img class="phonecall" src="img/phonecall.png" height="18px" width="18px" style="margin-top: 10px; float:right; right:55px;" >
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="ib-div">
+                            <img class="ib-img" src="img/ava5.png" height="36px" width="36px">
+                            <p class="ib-name">Linh Nguyễn</p>
+                            <div class="ib-onl"></div>
+                            <img class="videocall" src="img/videocall.png" height="18px" width="18px" style="margin-top: 11px; float:right; right: 30px;">
+                            <img class="phonecall" src="img/phonecall.png" height="18px" width="18px" style="margin-top: 10px; float:right; right:55px;" >
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <p style="font-size:11px; color: #4a4a4a; font-weight: 700; margin-left: 8px;">GROUP CONVERSATIONS</p>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="ib-div">
+                            <img class="ib-img" src="img/ava4.png" height="36px" width="36px">
+                            <div class="ib-group-name">
+                                <p class="ib-name">Anonymous group</p>
+                                <br>
+                                <p class="ib-group-mem">Thanh, Đức, My, 30 others</p>
+                            </div>
+                            <div class="ib-onl"></div>
+                            <img class="videocall" src="img/videocall.png" height="18px" width="18px" style="margin-top: 11px; float:right; right: 30px;">
+                            <img class="phonecall" src="img/phonecall.png" height="18px" width="18px" style="margin-top: 10px; float:right; right:55px;" >
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="ib-div">
+                            <img class="ib-img" src="img/ava6.png" height="36px" width="36px">
+                            <div class="ib-group-name">
+                                <p class="ib-name">Đánh lẻ</p>
+                                <br>
+                                <p class="ib-group-mem">Leo,Luis, 8 others</p>
+                            </div>
+                            
+                            <div class="ib-onl"></div>
+                            <img class="videocall" src="img/videocall.png" height="18px" width="18px" style="margin-top: 11px; float:right; right: 30px;">
+                            <img class="phonecall" src="img/phonecall.png" height="18px" width="18px" style="margin-top: 10px; float:right; right:55px;" >
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="ib-div">
+                            <img class="ib-img" src="img/ava2.png" height="36px" width="36px">
+                            <div class="ib-group-name">
+                                <p class="ib-name">Road to Champion</p>
+                                <br>
+                                <p class="ib-group-mem">Luis, Leo, Dat, 8 others</p>
+                            </div>
+                            
+                            <div class="ib-onl"></div>
+                            <img class="videocall" src="img/videocall.png" height="18px" width="18px" style="margin-top: 11px; float:right; right: 30px;">
+                            <img class="phonecall" src="img/phonecall.png" height="18px" width="18px" style="margin-top: 10px; float:right; right:55px;" >
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <div id="ib-search">
+                <img id="ib-search-icon" src="img/search-icon.png" height="16px" width ="16px">
+                <input id="ib-search-input" type="text">
+                <ul id="ib-options">
+                    <li>
+                        <a href="#">
+                            <img class="ib-options-icon" id="ib-setting-icon" src="img/ib-setting.png" height="15px" width="17px">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img class="ib-options-icon" id="ib-video-icon" src="img/ib-video.png" height="15px" width="17px">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img class="ib-options-icon" id="ib-add-icon" src="img/ib-add.png" height="15px" width="17px">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img class="ib-options-icon" id="ib-new-icon" src="img/ib-new.png" height="15px" width="17px">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        
+        
+    </body>
+</html>
